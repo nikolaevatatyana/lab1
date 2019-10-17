@@ -104,7 +104,7 @@ std::vector<pair> Word::sortV(std::map<std::string, long int> map)
 	return vec;
 }
 
-void Word::push_csv_()
+void Word::outword()
 {
 	for (auto const& pair : Word::sortV(words))
 	{
@@ -131,5 +131,5 @@ int main(int argc, char** argv ) {
 	}
 
 	w.parsetext(w.gettext());
-
+	w.outword();
 }
